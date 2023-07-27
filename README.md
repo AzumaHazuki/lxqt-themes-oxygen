@@ -7,7 +7,7 @@ Because LXQt handles SVG images differently than KDE Plasma -- in particular, th
 base widgets of the Plasma theme. Additionally, some (like the glows on taskbar items) aren't image files at all, but rather close approximations using the Q[Linear/Radial]Gradient QSS
 primitives! As a result, this theme is not pixel-perfect, but it's close enough that you would need to examine screenshots in an image editor to spot the differences.
 
-The base LXQt desktop with the theme applied -- using a Lubuntu port of the old Box theme and the Oxygen icon set:
+The LXQt desktop with theme applied -- using an Openbox port of the old Box theme and Oxygen icon set:
 ![LXQt-Oxygen](https://github.com/AzumaHazuki/lxqt-themes-oxygen/assets/67122280/48cb8c49-0e5d-4649-97f4-e7fcd142ba31)
 
 Popup menus (QMenu class) styled with grey gradient look:
