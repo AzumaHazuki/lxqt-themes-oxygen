@@ -1,0 +1,72 @@
+/* The main Leave dialog window */
+QDialog {
+        color:                          #212121;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e3e0df, stop:1 #c1bbb8);
+
+        border-top:                     1px solid #f7f6f5;
+        border-left:                    1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f7f6f5, stop:1 #c1bbb8);
+        border-right:                   1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f7f6f5, stop:1 #c1bbb8);
+        border-bottom:                  1px solid #c1bbb8;
+
+        border-radius:                  3px;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#212121;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#212121;
+	background:			rgba(0, 0, 0, 12.5%); /* This doesn't work for some reason... */
+	background-image:		url(assets/menus/bg.png); /* ...but this does! */
+
+        border-top:                     1px solid rgba(0, 0, 0, 20%);
+        border-left:                    1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(0, 0, 0, 5%));
+        border-right:                   1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%),  stop:1 rgba(0, 0, 0, 5%));
+        border-bottom:                  1px solid rgba(0, 0, 0, 5%);
+
+        border-radius:                  3px;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #212121;
+        background:                     transparent;
+
+	border:				4px solid transparent;
+	border-image:			url(assets/boxes/unchecked.png) 4;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    3px;
+        padding-bottom:			3px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+        color:                          #212121;
+        background:                     transparent;
+
+	border:				4px solid transparent;
+	border-image:			url(assets/boxes/unchecked.png) 4;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    3px;
+        padding-bottom:			3px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+
+QPushButton:pressed, QToolButton:pressed {
+	border-image:			url(assets/boxes/pressed.png) 4;
+}
